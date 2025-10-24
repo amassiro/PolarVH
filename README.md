@@ -126,6 +126,10 @@ Running:
     --> it works
     
     
+Example:
+
+    /eos/cms/store/user/amassiro/PrivateMC/RunIISummer20UL18NanoAODv9/VH_H_VToLL_VL_mg_pythia8/RunIISummer20UL18NanoAODv9_106X_upgrade2018_realistic_v11_L1v1-MINIAODSIM/251023_085208/0000/nanoStep_231.root
+    
     
     
 
