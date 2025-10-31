@@ -183,69 +183,47 @@ Step by Step use
     cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/mkShapesRDF/
     source start.sh
 
-    cd ../PlotsConfigurationsRun3/PolarVH/
-
-
-
 
 Post-processing private sample
 
-    /ZH_HToGluGlu_ZToLL_13TeV_powheg_pythia8/rgerosa-RunIISummer20UL18NanoAODv9_106X_upgrade2018_realistic_v11_L1v1-MINIAODSIM-00000000000000000000000000000000/USER
-    some files here: /eos/user/a/amassiro/HIG/ZHgg
+        /VH_H_VToLL_VL_mg_pythia8_v2/amassiro-RunIISummer20UL18NanoAODv9_106X_upgrade2018_realistic_v11_L1v1-MINIAODSIM-00000000000000000000000000000000/USER
+
+    some files here: /eos/user/a/amassiro/HIG/ZHpolar
+    and here:
+    /eos/cms//store/user/amassiro/PrivateMC/RunIISummer20UL18NanoAODv9/VH_H_VToLL_VL_mg_pythia8_v2/RunIISummer20UL18NanoAODv9_106X_upgrade2018_realistic_v11_L1v1-MINIAODSIM/251027_134624/0000/
 
 
-    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/Hgg/Analysis/mkShapesRDF/
+    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/mkShapesRDF/
     source start.sh
 
 
-    store: /eos/user/a/amassiro/HIG/ZHggPostProc/
+    store: /eos/user/a/amassiro/HIG/ZHpolarPostProc/
 
 
     alias vomsgrid='voms-proxy-init --rfc --voms cms -valid 193:00'
 
     vomsgrid
 
-    mkPostProc -o 0 -p Summer22_130x_nAODv12_Full2022v12 -s MCl1loose2022v12__MCCorr2022v12 -T ggWW_LL -dR 1
+    Modify the files:
+        samplesCrossSections_UL.py
+        Summer20UL18_106x_nAODv9.py
 
-    mkPostProc -o 0 -p Summer20UL18_106x_nAODv9_Full2018v9 -s MCFull2018v9 -T ZHgg -dR 1
-
-    jobs in: /afs/cern.ch/work/a/amassiro/Latinos/Framework/Hgg/Analysis/mkShapesRDF/mkShapesRDF/processor/condor
-
-    interactive mode:
-    python /afs/cern.ch/work/a/amassiro/Latinos/Framework/Hgg/Analysis/mkShapesRDF/mkShapesRDF/processor/condor/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/ZHgg__part0/script.py
-
-
-    mkPostProc -o 0 -p Summer20UL18_106x_nAODv9_Full2018v9 -s MCFull2018v9 -T ZHgg
-
-
-
-    output is here: /eos/user/a/amassiro/HIG/ZHggPostProc/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/
+    fish://amassiro@lxplus.cern.ch/afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/mkShapesRDF/mkShapesRDF/processor/framework/samples/Summer20UL18_106x_nAODv9.py
 
 
     Need more steps ...
     MCl1loose2018v9__MCCorr2018v9NoJERInHorn__l2tightOR2018v9
     At least: MCCorr2018v9, now added in the step "MCFull2018v9"
 
-    mkPostProc -o 0 -p Summer20UL18_106x_nAODv9_Full2018v9 -s MCFull2018v9 -T ZHgg
+    mkPostProc -o 0 -p Summer20UL18_106x_nAODv9_Full2018v9 -s MCFull2018v9 -T ZH_H_ZToLL_ZL
 
 
-    output is here: /eos/user/a/amassiro/HIG/ZHggPostProc/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/
+    output is here: /eos/user/a/amassiro/HIG/ZHpolarPostProc/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/
 
 
-    Expected: ~150 events of signal in 2018
+    https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageAt13TeV
 
 
-    Units in pb
-    From https://twiki.cern.ch/twiki/pub/LHCPhysics/HiggsXSBR/Higgs_XSBR_YR4_update.xlsx
-    8.839E-01 pb
-    and the branching ratio:
-    https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageBR
-    8.187E-02
-    BR Z>ll:  3.3658% x 3
-    From https://pdg.lbl.gov/2018/listings/rpp2018-list-z-boson.pdf
 
-    ZH_HToGluGlu_ZToLL_13TeV_powheg_pythia8
-
-    59000×0.8839×0.08187×0.033658×3
 
 
