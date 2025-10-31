@@ -186,7 +186,7 @@ Step by Step use
 
 Post-processing private sample
 
-        /VH_H_VToLL_VL_mg_pythia8_v2/amassiro-RunIISummer20UL18NanoAODv9_106X_upgrade2018_realistic_v11_L1v1-MINIAODSIM-00000000000000000000000000000000/USER
+    /VH_H_VToLL_VL_mg_pythia8_v2/amassiro-RunIISummer20UL18NanoAODv9_106X_upgrade2018_realistic_v11_L1v1-MINIAODSIM-00000000000000000000000000000000/USER
 
     some files here: /eos/user/a/amassiro/HIG/ZHpolar
     and here:
@@ -215,7 +215,14 @@ Post-processing private sample
     MCl1loose2018v9__MCCorr2018v9NoJERInHorn__l2tightOR2018v9
     At least: MCCorr2018v9, now added in the step "MCFull2018v9"
 
+    mkPostProc -o 0 -p Summer20UL18_106x_nAODv9_Full2018v9 -s MCFull2018v9 -T ZH_H_ZToLL_ZL   -dR 1
+
     mkPostProc -o 0 -p Summer20UL18_106x_nAODv9_Full2018v9 -s MCFull2018v9 -T ZH_H_ZToLL_ZL
+
+    jobs in: /afs/cern.ch/work/a/amassiro/Latinos/Framework/PolarVH/mkShapesRDF/mkShapesRDF/processor/condor
+
+    interactive mode:
+    python /afs/cern.ch/work/a/amassiro/Latinos/Framework/PolarVH/mkShapesRDF/mkShapesRDF/processor/condor/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/ZH_H_ZToLL_ZL__part39/script.py
 
 
     output is here: /eos/user/a/amassiro/HIG/ZHpolarPostProc/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/
