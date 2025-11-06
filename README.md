@@ -166,7 +166,7 @@ Step by Step installation
 
     cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/
 
-    git clone https://github.com/latinos/mkShapesRDF
+    git clone git@github.com:latinos/mkShapesRDF.git
     cd mkShapesRDF/
     source install.sh
 
@@ -181,6 +181,10 @@ Step by Step use
 
 
     cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/mkShapesRDF/
+    source start.sh
+
+    < the development branch>
+    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/mkShapesRDF/
     source start.sh
 
 
@@ -225,10 +229,35 @@ Post-processing private sample
     python /afs/cern.ch/work/a/amassiro/Latinos/Framework/PolarVH/mkShapesRDF/mkShapesRDF/processor/condor/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/ZH_H_ZToLL_ZL__part39/script.py
 
 
-    output is here: /eos/user/a/amassiro/HIG/ZHpolarPostProc/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/
+    output is here: /eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano//Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9
+    then moved here:
+    /eos/user/a/amassiro/HIG/ZHpolarPostProc/
+    /eos/user/a/amassiro/HIG/ZHpolarPostProc/Summer20UL18_106x_nAODv9_Full2018v9/MCFull2018v9/
 
 
     https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageAt13TeV
+
+
+    if problems with password (git clone via https):
+    git remote set-url origin git@github.com:latinos/mkShapesRDF
+
+
+
+mkShapes
+
+
+Install PlotsConfigurationRun3
+
+    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/
+    git clone git@github.com:latinos/PlotsConfigurationsRun3.git
+
+
+Step by Step use
+
+    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/mkShapesRDF/
+    source start.sh
+
+    cd ../PlotsConfigurationsRun3/PolarVH/
 
 
 
