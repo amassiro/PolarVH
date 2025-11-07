@@ -254,10 +254,31 @@ Install PlotsConfigurationRun3
 
 Step by Step use
 
-    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/mkShapesRDF/
+    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/mkShapesRDF/
     source start.sh
 
-    cd ../PlotsConfigurationsRun3/PolarVH/
+    cd /afs/cern.ch/user/a/amassiro/work/Latinos/Framework/PolarVH/PlotsConfigurationsRun3/PolarVH/
+
+
+
+# Run on hercules
+
+    ssh cerbero
+    ssh hercules
+
+Install mkShapesRDF
+
+    git clone git@github.com:latinos/mkShapesRDF.git
+    cd mkShapesRDF/
+    source install.sh
+
+
+Install PlotsConfigurationRun3
+
+    git clone git@github.com:latinos/PlotsConfigurationsRun3.git
+
+
+
 
 
 
