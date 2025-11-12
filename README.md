@@ -278,6 +278,18 @@ Install PlotsConfigurationRun3
     git clone git@github.com:latinos/PlotsConfigurationsRun3.git
 
 
+Current generation:
+
+    WH+ZH --> VH_H_VToLL_VL_mg_pythia8_v2
+
+    all decay processes
+
+    bb
+    tautau
+
+
+
+
 
 
 
