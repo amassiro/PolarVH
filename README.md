@@ -275,7 +275,17 @@ Install mkShapesRDF
 
 Install PlotsConfigurationRun3
 
-    git clone git@github.com:latinos/PlotsConfigurationsRun3.git
+    git clone git@github.com:latinos/PlotsConfigurationsRun3.git --branch amassiro-polarVH
+
+
+Run:
+
+    cd /gwpool/users/amassiro/mkShapesRDF/
+    source start.sh
+    cd /gwpool/users/amassiro/PlotsConfigurationsRun3/PolarVH/2018UL/
+    vomsgrid
+
+
 
 
 Current generation:
