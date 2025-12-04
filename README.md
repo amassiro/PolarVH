@@ -284,7 +284,39 @@ Run:
     source start.sh
     cd /gwpool/users/amassiro/PlotsConfigurationsRun3/PolarVH/2018UL/
     vomsgrid
+    useos
 
+NB:
+    alias useos='export KRB5CCNAME=/gwpool/users/amassiro/krb5cc_11142; kinit -f amassiro@CERN.CH; eosfusebind -g; aklog'
+
+
+Compile the configuration folder
+
+    mkShapesRDF -c 1
+
+Run the analysis
+
+Produce histograms using batch:
+
+    mkShapesRDF -o 0 -f . -b 1
+
+    mkShapesRDF -c 1 -o 0 -f . -b 1
+
+    mkShapesRDF --submit
+
+Check jobs status:
+
+    mkShapesRDF -o 1 -f .
+
+
+    mkShapesRDF --check
+
+
+Resubmit failed jobs:
+
+    mkShapesRDF -o 1 -f . -r 1
+
+    mkShapesRDF --resubmit 1
 
 
 
