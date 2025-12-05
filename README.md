@@ -319,6 +319,10 @@ Resubmit failed jobs:
     mkShapesRDF --resubmit 1
 
 
+Access on EOS from Hercules
+
+    ...
+
 
 Current generation:
 
