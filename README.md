@@ -283,11 +283,14 @@ Run:
     cd /gwpool/users/amassiro/mkShapesRDF/
     source start.sh
     cd /gwpool/users/amassiro/PlotsConfigurationsRun3/PolarVH/2018UL/
-    vomsgrid
-    useos
+
+
+
+    mountEos
 
 NB:
     alias useos='export KRB5CCNAME=/gwpool/users/amassiro/krb5cc_11142; kinit -f amassiro@CERN.CH; eosfusebind -g; aklog'
+    alias mountEos='kinit; eosfusebind;'
 
 
 Compile the configuration folder
@@ -299,8 +302,6 @@ Run the analysis
 Produce histograms using batch:
 
     mkShapesRDF -o 0 -f . -b 1
-
-    mkShapesRDF -c 1 -o 0 -f . -b 1
 
     mkShapesRDF --submit
 
