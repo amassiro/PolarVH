@@ -283,15 +283,17 @@ Run:
     cd /gwpool/users/amassiro/mkShapesRDF/
     source start.sh
     cd /gwpool/users/amassiro/PlotsConfigurationsRun3/PolarVH/2018UL/
-
-
-
     mountEos
 
 NB:
     alias useos='export KRB5CCNAME=/gwpool/users/amassiro/krb5cc_11142; kinit -f amassiro@CERN.CH; eosfusebind -g; aklog'
     alias mountEos='kinit; eosfusebind;'
 
+Run without eos:
+
+    cd /gwpool/users/amassiro/mkShapesRDF/
+    source start.sh
+    cd /gwpool/users/amassiro/PlotsConfigurationsRun3/PolarVH/2018UL/
 
 Compile the configuration folder
 
