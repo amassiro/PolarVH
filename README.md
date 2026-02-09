@@ -324,7 +324,7 @@ Resubmit failed jobs:
 
 Access on EOS from Hercules
 
-    ...
+    ... skipped ...
 
 
 Current generation:
