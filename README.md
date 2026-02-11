@@ -277,6 +277,8 @@ Install PlotsConfigurationRun3
 
     git clone git@github.com:latinos/PlotsConfigurationsRun3.git --branch amassiro-polarVH
 
+    git clone git@github.com:latinos/PlotsConfigurationsRun3.git --branch amassiro-polarVH-Hercules
+
 
 Run:
 
