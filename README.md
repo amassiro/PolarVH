@@ -322,6 +322,33 @@ Resubmit failed jobs:
     mkShapesRDF --resubmit 1
 
 
+Once all the jobs have finished, you can merge them:
+
+    mkShapesRDF -o 2 -f .
+
+    mkShapesRDF --histoadd
+
+### Plot distributions
+
+    mkPlot
+    mkPlot --onlyPlot cratio --showIntegralLegend 1 --fileFormats png
+    mkPlot --onlyPlot cratio --showIntegralLegend 1 --fileFormats png  --plotNormalizedDistributions
+
+
+### to check kerberos
+
+    klist
+
+
+### make datacards
+
+    mkDatacards --outputDirDatacard datacards
+
+    mkDatacards --outputDirDatacard datacards --onlyVariables mjjbins,mjj   --onlyCuts Sig_opt4
+
+
+
+
 Access on EOS from Hercules
 
     ... skipped ...
